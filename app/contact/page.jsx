@@ -264,20 +264,33 @@ export default function Contact() {
               </div>
 
               {/* Map Placeholder */}
-              <div className="mt-8">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                  Find Us
-                </h3>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.6549850958927!2d78.04558447535544!3d30.303882174793927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929a134a7695b%3A0x853f44f34c389e85!2sHurla%20Interio!5e0!3m2!1sen!2sin!4v1753353347008!5m2!1sen!2sin"
-                  width="600"
-                  height="450"
-                  
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
+   <div className="mt-8">
+  <h3 className="text-lg font-semibold text-gray-900 mb-4">
+    Find Us
+  </h3>
+  <div style={{
+    position: 'relative',
+    width: '100%',
+    paddingBottom: '75%', // 4:3 aspect ratio (450/600 = 0.75)
+    height: 0
+  }}>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.6549850958927!2d78.04558447535544!3d30.303882174793927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929a134a7695b%3A0x853f44f34c389e85!2sHurla%20Interio!5e0!3m2!1sen!2sin!4v1753353347008!5m2!1sen!2sin"
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        border: 0
+      }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+  </div>
+</div>
+
             </motion.div>
           </div>
         </div>

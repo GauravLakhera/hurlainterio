@@ -53,7 +53,7 @@ const Navbar = () => {
     },
     {
       name: "Decor",
-      href: "/decor", // Fixed: Added proper decor route
+      href: "/decoration", // Fixed: Added proper decor route
       children: [], // You can add children later if needed
     },
   ];
@@ -203,7 +203,7 @@ const Navbar = () => {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 rounded-md text-white"
+              className={`md:hidden p-2 rounded-md ${isScrolled?`text-black`:`text-white`} `}
             >
               {isMobileMenuOpen ? (
                 <X className="w-6 h-6" />

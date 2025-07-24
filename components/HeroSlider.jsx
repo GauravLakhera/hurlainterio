@@ -100,7 +100,7 @@ const HeroSlider = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                   >
-                    <h1 className="text-3xl md:text-7xl font-bold mb-4 leading-tight">
+                    <h1 className="text-4xl md:text-7xl font-bold mb-4 leading-tight">
                       {slide.title}
                     </h1>
                   </motion.div>
@@ -154,7 +154,7 @@ const HeroSlider = () => {
         </Swiper>
 
         {/* Arrows */}
-        <div className="absolute top-1/2 left-4 transform -translate-y-1/2 z-20">
+        <div className="hidden md:block absolute top-1/2 left-4 transform -translate-y-1/2 z-20">
           <div
             ref={prevRef}
             className="bg-amber-500 text-white w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center cursor-pointer hover:bg-amber-600 transition"
@@ -162,7 +162,7 @@ const HeroSlider = () => {
             <span className="text-xl font-bold">&larr;</span>
           </div>
         </div>
-        <div className="absolute top-1/2 right-4 transform -translate-y-1/2 z-20">
+        <div className="hidden md:block absolute top-1/2 right-4 transform -translate-y-1/2 z-20">
           <div
             ref={nextRef}
             className="bg-amber-500 text-white w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center cursor-pointer hover:bg-amber-600 transition"
