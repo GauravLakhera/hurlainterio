@@ -112,7 +112,7 @@ const StyleCarousel = () => {
             {styles.map((style) => (
               <SwiperSlide key={style.id}>
                 <div className="group">
-                  <Link href={`/styles/${style.id}`}>
+                  <Link href={'/contact'}>
                     <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                       <div className="relative h-64 overflow-hidden">
                         <Image

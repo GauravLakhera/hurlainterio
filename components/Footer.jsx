@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+import Link from "next/link";
+import { motion } from "framer-motion";
 import {
   Facebook,
   Instagram,
@@ -11,41 +11,42 @@ import {
   Phone,
   MapPin,
   Clock,
-  ArrowUp
-} from 'lucide-react';
+  ArrowUp,
+} from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const footerLinks = {
     quicklinks: [
-      { name: 'About Us', href: '/#' },
-      { name: 'Contact Us', href: '/#' },
-      { name: 'Portfolio', href: '/#' },
-      { name: 'Catalogue', href: '/#' },
+       { name: "Home", href: "/" },
+      { name: "About Us", href: "/about" },
+      { name: "Contact Us", href: "/contact" },
+      { name: "Portfolio", href: "/portfolio" },
+      
     ],
     services: [
-      { name: 'Modular Kitchen Design', href: '/#' },
-      { name: 'Luxury Wardrobe Solutions', href: '/#' },
-      { name: 'Sliding & Walk-in Wardrobes', href: '/#' },
-      { name: 'Island Kitchens', href: '/#' },
+      { name: "Modular Kitchen Design", href: "/#" },
+      { name: "Luxury Wardrobe Solutions", href: "/#" },
+      { name: "Sliding & Walk-in Wardrobes", href: "/#" },
+      { name: "Island Kitchens", href: "/#" },
     ],
 
     legal: [
-      { name: 'Privacy Policy', href: '/#' },
-      { name: 'Terms of Service', href: '/#' },
-      { name: 'Warrenty', href: '/#' },
-      { name: 'Refund Policy', href: '/#' },
+      { name: "Privacy Policy", href: "/#" },
+      { name: "Terms of Service", href: "/#" },
+      { name: "Warrenty", href: "/#" },
+      { name: "Refund Policy", href: "/#" },
     ],
   };
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Linkedin, href: "#", label: "LinkedIn" },
   ];
 
   return (
@@ -75,14 +76,11 @@ const Footer = () => {
               <div className="text-2xl font-bold inline-block transition-transform duration-300 hover:scale-110 cursor-pointer">
                 <span className="text-amber-400">HURLA</span> INTERIO
               </div>
-
             </Link>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Luxury kitchen & wardrobe design  creating customized, elegant interiors with craftsmanship and care.
+              Luxury kitchen & wardrobe design creating customized, elegant
+              interiors with craftsmanship and care.
             </p>
-
-
-
           </motion.div>
 
           {/* Company Links */}
@@ -118,12 +116,9 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="text-gray-300 hover:text-amber-400 transition-colors duration-200"
-                  >
+                  <h1 className="text-gray-300 hover:text-amber-400 transition-colors duration-200">
                     {link.name}
-                  </Link>
+                  </h1>
                 </li>
               ))}
             </ul>
@@ -134,7 +129,10 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6">Contact Information</h3>
             <div className="flex items-center space-x-3">
               <MapPin className="w-5 h-5 text-amber-400 flex-shrink-0" />
-              <span className="text-gray-300">188, Dharampur Chowk, Old Nehru Colony, Dharampur, Dehradun - 248001</span>
+              <span className="text-gray-300">
+                188, Dharampur Chowk, Old Nehru Colony, Dharampur, Dehradun -
+                248001
+              </span>
             </div>
             <div className="flex items-center space-x-3">
               <Phone className="w-5 h-5 text-amber-400 flex-shrink-0" />
@@ -144,12 +142,8 @@ const Footer = () => {
               <Mail className="w-5 h-5 text-amber-400 flex-shrink-0" />
               <span className="text-gray-300">info@hurlainterio.com</span>
             </div>
-
           </div>
         </div>
-
-
-
       </div>
       <div className="w-full border-t bg-[#000] border-gray-200 mt-0 py-6 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-center">
@@ -175,7 +169,8 @@ const Footer = () => {
 
           {/* Copyright Text */}
           <div className="text-sm text-gray-400">
-            © {new Date().getFullYear()} HURLA INTERIO. All rights reserved. Crafted with excellence.
+            © {new Date().getFullYear()} HURLA INTERIO. All rights reserved.
+            Crafted with excellence.
           </div>
         </div>
       </div>
